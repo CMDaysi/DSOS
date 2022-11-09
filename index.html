@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSOS</title>
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">DSOS Daysi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+  <div class="auth-container d-flex">
+
+    <div class="container mx-auto align-self-center">
+        <br>
+        <form class="row g-3" method="POST">
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">País:</label>
+                <select id="pais"  required="required" class="form-select" name="puesto">
+                    <option value="" selected>Seleccione su país...</option>
+                    
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Código postal:</label>
+                <input type="text" required="required" class="form-control" id="codigop" name="codigop">
+            </div>
+            <div class="col-md-6">
+                 <label for="nombre" class="form-label">Colonia:</label>
+                 <select id="col" onchange="separarDatos()" required="required" class="form-select" name="col">
+                    <option value="" selected>Seleccione su país...</option>
+                    
+                </select>
+            </div>
+            <div class="col-md-6">
+                 <label for="nombre" class="form-label">Localidad:</label>
+                <input type="text"   required="required" class="form-control" id="loc" name="loc">
+            </div>
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Municipio:</label>
+               <input type="text" required="required" class="form-control" id="mun" name="mun">
+           </div>
+
+           <div class="col-md-6">
+            <label for="nombre" class="form-label">Georeferencias:</label>
+           <input type="text" required="required" class="form-control" id="ref" name="ref">
+       </div>
+        </form>
+        
+    </div>
+
+</div>
+<script src="./main.js"></script>
+
+</body>
+</html>
